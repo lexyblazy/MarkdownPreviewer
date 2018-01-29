@@ -3,10 +3,12 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-
-.input{
-  width: 50%;
+.header {
+  text-align: center;
 }
-.output{
-  width: 50%;
+
+.input,.output{
+  float: left;
+  width: 45%;
+  margin:2.5%;
 }
