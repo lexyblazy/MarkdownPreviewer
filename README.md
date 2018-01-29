@@ -1,6 +1,6 @@
 # Markdown Previewer
 
-A markup previewer built as a freecodecamp React project.
+A markdown previewer built as a freecodecamp React project.
 
 
 ```
