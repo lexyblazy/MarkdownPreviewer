@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Remarkable from 'remarkable';
+import Remarkable from "remarkable";
 
 class MarkdownEditor extends Component {
   constructor(props) {
@@ -12,8 +12,6 @@ class MarkdownEditor extends Component {
   }
 
   handleChange(e) {
-    const { value } = this.state;
-    // this.setState({value:''});
     this.setState({ value: e.target.value });
   }
   getRawMarkup() {
@@ -22,13 +20,14 @@ class MarkdownEditor extends Component {
   }
 
   render() {
-      const style={'width':'100%'}
+    const style = { width: "100%" };
     return (
       <div className="MarkdownEditor">
         <div className="input">
           <h3>Input</h3>
-          <textarea style={style}
-            placeholder='Type some markdown here!'
+          <textarea
+            style={style}
+            placeholder="Type some markdown here!"
             cols="100"
             rows="30"
             onChange={this.handleChange}
@@ -37,7 +36,8 @@ class MarkdownEditor extends Component {
         </div>
         <div className="output">
           <h3>Output</h3>
-          <div style={style}
+          <div
+            style={style}
             className="content"
             dangerouslySetInnerHTML={this.getRawMarkup()}
           />

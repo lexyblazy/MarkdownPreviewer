@@ -3,9 +3,6 @@ import MarkdownEditor from './markdown';
 import Header from './header';
 import './App.css';
 
-const style = {
-  width:'50%'
-}
 
 class App extends Component {
   render() {
